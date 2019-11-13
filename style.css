@@ -525,7 +525,7 @@ header a {
     height: 132px;
 }
 
-.Gantt-chart {
+.gantt-chart {
     display: flex;
     flex-flow: row nowrap;
     align-items: flex-end;
@@ -534,24 +534,46 @@ header a {
     height: 132px;
 }
 
-.Gantt-chart>div {
+.gantt-chart>div {
     width: 7px;
     height: 55px;
     background-color: #EAF0F7;
 }
 
-.Gantt-chart>div:nth-child(5){
-    background-color: #E75A31;
-}
-
-.Gantt-chart>div:nth-child(5)::after {
-    content: "med";
-    transform: rotate(-90deg);
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 10px;
+.gantt-chart>div:nth-child(5){
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    /* justify-content: center; */
+    background-color: #fff;
+    box-sizing: border-box;
     
 }
+
+.gantt-chart>div:nth-child(5)>p {
+    font-weight: 600;
+    font-size: 6px;
+    line-height: 10px;
+    transform: rotate(-90deg);
+}
+
+.gantt-chart>div:nth-child(5)>p::before {
+    content: "";
+    background-color: #E75A31;
+    width: 30px;
+    height: 30px;
+}
+
+/* .red-element {
+    background-color: #E75A31;
+    height: 20px;
+    max-width: 110px;
+    border: 1px solid black;
+} */
+
+
 
 
 .right-box-tree>.info-text-two>.button-info-two {
