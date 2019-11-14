@@ -451,12 +451,33 @@ header a {
 
 .info-box-tree {
     display: flex;
+    position: relative;
     box-sizing: border-box;
     width: 362px;
     height: 325px;
     background-color: #fff;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
     padding: 35px 49px 5px 30px;
+}
+
+.info-box-tree::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 0px;
+    border: 3px solid #151F32;
+    left: -65px;
+    top: 40px;
+}
+
+.info-box-tree::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 0px;
+    border: 3px solid #151F32;
+    right: -104px;
+    bottom: 1px;
 }
 
 .info-box-statistic-tree {
@@ -554,7 +575,7 @@ header a {
 
 .gantt-chart>div:nth-child(5)>p {
     font-weight: 600;
-    font-size: 6px;
+    font-size: 8px;
     line-height: 10px;
     transform: rotate(-90deg);
 }
@@ -565,14 +586,6 @@ header a {
     width: 30px;
     height: 30px;
 }
-
-/* .red-element {
-    background-color: #E75A31;
-    height: 20px;
-    max-width: 110px;
-    border: 1px solid black;
-} */
-
 
 
 
