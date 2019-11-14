@@ -595,15 +595,124 @@ header a {
 
 /* section fore start */
 
-.wrape-fore {
-    display: flex;
+.wraper-fore {
     max-width: 1160px;
-    height: 481px;
+    height: 460px;
     box-sizing: border-box;
     position: relative;
     margin: 0 auto;
-    padding-top: 161px;
+    margin-top: 161px;
+    box-sizing: border-box;
 }
+
+.wraper-fore>section {
+    display: flex;
+}
+
+.left-box-fore {
+    position: relative;
+    width: 500px;
+    height: 460px;
+    background: url(img/imfForeBoxLeft.svg) no-repeat;
+    background-position: 0 center;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-top: 125px;
+    margin-left: 128px;
+}
+
+.left-box-fore>h2 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+.left-box-fore>p {
+    width: 178px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 157.3%;
+    color: #FCD3AC;
+    padding-top: 21px;
+}
+
+.left-box-fore>button {
+    width: 43px;
+    height: 43px;
+    background: url(img/play.svg) no-repeat;
+    border: none;
+    margin-top: 31px;
+}
+
+.left-box-fore>.arrows {
+    padding-top: 65px;
+}
+
+.left-img-box-fore{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 230px;
+    height: 260px;
+    position: absolute;
+    right: 41px;
+    bottom: -42px;
+}
+
+.left-img-box-fore>p, 
+.right-img-box-fore>p {
+    width: 175px;
+    height: 40px;
+    color: #151F32;
+    font-size: 12px;
+    line-height: 163.3%;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 157.3%;
+    color: #000000;
+}
+
+.right-box-fore {
+    display: flex;
+    flex-basis: 45%;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.right-box-fore>h2 {
+    font-weight: 900;
+    font-size: 110px;
+    line-height: 132px;
+    /* margin-top: 55px; */
+}
+
+.decoration-line-box-fore {
+    width: 112px;
+    height: 7px;
+    background-color:#151F32;
+    margin-top: 55px;
+    align-self: flex-end;
+}
+
+.right-img-box-fore {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 230px;
+    height: 260px;
+}
+
+
+
+
 
 
 
