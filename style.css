@@ -532,29 +532,26 @@ header a {
 
 .gantt-chart>div:nth-child(5){
     position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    /* justify-content: center; */
-    background-color: #fff;
-    box-sizing: border-box;
-    
+    background-color: #E75A31;
+    height: 60%;
 }
 
 .gantt-chart>div:nth-child(5)>p {
     font-weight: 600;
     font-size: 8px;
     line-height: 10px;
+    
+}
+
+.gantt-chart>div:nth-child(5)::before {
+    position: absolute;
+    content: "max";
+    top: -28px;
+    display: block;
+    left: -12px;
     transform: rotate(-90deg);
 }
 
-.gantt-chart>div:nth-child(5)>p::before {
-    content: "";
-    background-color: #E75A31;
-    width: 30px;
-    height: 30px;
-}
 
 
 
