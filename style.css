@@ -133,8 +133,18 @@ header a {
     font-size: 17px;
     line-height: 20px;
     color: #151F32;
-	cursor: pointer;
+    cursor: pointer;
+    transition-duration: .5s;
 }
+
+.midle-button-left>button:hover{
+    background-color: cornflowerblue;
+}
+
+.midle-button-right>button:hover {
+    background-color: rgb(172, 238, 231);
+}
+
 
 .right-side-first-content {
     position: relative;
@@ -432,6 +442,7 @@ header a {
 .info-box-tree::after {
     content: "";
     position: absolute;
+    background-color: #151F32;
     width: 60px;
     height: 0px;
     border: 3px solid #151F32;
@@ -442,6 +453,7 @@ header a {
 .info-box-tree::before {
     content: "";
     position: absolute;
+    background-color: #151F32;
     width: 20px;
     height: 0px;
     border: 3px solid #151F32;
@@ -536,16 +548,29 @@ header a {
     height: 60%;
 }
 
-.gantt-chart>div:nth-child(5)>p {
-    font-weight: 600;
-    font-size: 8px;
-    line-height: 10px;
-    
-}
-
 .gantt-chart>div:nth-child(5)::before {
     position: absolute;
     content: "max";
+    top: -28px;
+    display: block;
+    left: -12px;
+    transform: rotate(-90deg);
+}
+
+.gantt-chart>div:nth-child(11){
+    position: relative;
+    background-color: #E75A31;
+    height: 20%;
+    transition-duration: 1s;
+}
+
+.gantt-chart>div:nth-child(11):hover {
+    height: 50%;
+}
+
+.gantt-chart>div:nth-child(11)::before {
+    position: absolute;
+    content: "min";
     top: -28px;
     display: block;
     left: -12px;
@@ -607,9 +632,19 @@ header a {
 .left-box-fore>button {
     width: 43px;
     height: 43px;
-    background: url(img/play.svg) no-repeat;
+    background: url(img/play.svg) center no-repeat;
     border: none;
     margin-top: 31px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.left-box-fore>button:active {
+    background-size: 90%;
+}
+
+.left-box-fore>button:focus {
+    outline:none;
 }
 
 .left-box-fore>.arrows-box-fore {
@@ -887,9 +922,9 @@ h3 {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    max-width: 1160px;
-    margin: 0 auto;
-    height: 317px;
+    max-width: 950px;
+    margin: 160px auto 50px 50px;
+    /* height: 317px; */
 }
 
 footer li:first-child {
@@ -909,4 +944,8 @@ footer a {
     margin-top: 16px;
     width: 198px;
     height: 100%;
+}
+
+.footer__column-4 {
+    align-self: baseline;
 }
