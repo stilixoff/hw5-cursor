@@ -723,12 +723,13 @@ h3 {
 
 .wraper-five>section {
     max-width: 1160px;
+    width: 1000px;
     height: 534px;
     display: flex;
     margin-left: 128px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
